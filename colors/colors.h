@@ -23,9 +23,9 @@ struct CMYK
 
 struct HLS
 {
-    int h = 0;   // 0..359
-    int s = 0;   // 0..255
-    int l = 0;   // 0..255
+    int h = 0;
+    int s = 0;
+    int l = 0;
 };
 
 class colors : public QWidget
@@ -50,10 +50,10 @@ private slots:
 private:
     Ui::colors *ui;
 
-    // три независимых состояния
+
     QColor* color;
-    CMYK    cmyk;
-    HLS     hls;
+    CMYK cmyk;
+    HLS hls;
 
     QSlider* Red_slider;
     QSlider* Green_slider;
